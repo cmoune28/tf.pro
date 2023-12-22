@@ -100,7 +100,7 @@ resource "aws_elastic_beanstalk_environment" "vpro-bean-prod" {
   }
   setting {
     namespace = "aws:elasticbeanstalk:command"
-    name      = "BatchSizeType"
+    name      = "BatchSize"
     value     = "1"
   }
   setting {

@@ -21,10 +21,10 @@ resource "aws_db_instance" "vpro-rds" {
   engine_version    = "8.0.33"
   instance_class    = "db.t2.micro"
   #   name = var.dbname
-  db_name                = var.dbname
-  username               = var.dbuser
-  password               = var.dbpass
-#   parameter_group_name   = "default.mysql5.7"
+  db_name  = var.dbname
+  username = var.dbuser
+  password = var.dbpass
+  #   parameter_group_name   = "default.mysql5.7"
   multi_az               = "false"
   publicly_accessible    = "false"
   skip_final_snapshot    = true

@@ -11,6 +11,10 @@ variable "AMIS" {
   }
 }
 
+variable "instance-type" {
+  default = "t2.micro"
+}
+
 variable "Priv_key_path" {
   default = "vprofilekey"
 }
